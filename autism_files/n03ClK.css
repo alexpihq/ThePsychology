@@ -1,9 +1,5 @@
-/* COLORS */
-/* SIZES */
-/* FONTS */
-/* MISCELLANEOUS */
-/* Z-INDEXES - copied from source bootstrap file and adjusted */
-/* WHITELABEL */
+
+
 .cfV1xx {
   margin: 0 !important;
 }
@@ -1090,12 +1086,8 @@
   border-left: none !important;
   border-top: none !important;
   border-right: none !important;
-}/* COLORS */
-/* SIZES */
-/* FONTS */
-/* MISCELLANEOUS */
-/* Z-INDEXES - copied from source bootstrap file and adjusted */
-/* WHITELABEL */
+}
+
 .cf3qpw {
   --banner-font-size: 5px;
   margin: 2em auto;
@@ -1119,12 +1111,8 @@
   100% {
     transform: rotate(360deg);
   }
-}/* COLORS */
-/* SIZES */
-/* FONTS */
-/* MISCELLANEOUS */
-/* Z-INDEXES - copied from source bootstrap file and adjusted */
-/* WHITELABEL */
+}
+
 .cfEa3L {
   --banner-ref-font-size: var(--banner-font-size);
 }

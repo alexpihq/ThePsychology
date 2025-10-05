@@ -1,9 +1,5 @@
-/* COLORS */
-/* SIZES */
-/* FONTS */
-/* MISCELLANEOUS */
-/* Z-INDEXES - copied from source bootstrap file and adjusted */
-/* WHITELABEL */
+
+
 .cf1y60 {
   position: relative;
   display: inline-flex;
@@ -62,12 +58,8 @@
   bottom: 0;
   width: 100%;
   border-bottom: 2px solid;
-}/* COLORS */
-/* SIZES */
-/* FONTS */
-/* MISCELLANEOUS */
-/* Z-INDEXES - copied from source bootstrap file and adjusted */
-/* WHITELABEL */
+}
+
 .cf4zFo,
 .cf3dLT {
   border: 0 none !important;
@@ -182,12 +174,8 @@ button[dir=rtl] {
   .cfJG4s {
     max-width: 85px;
   }
-}/* COLORS */
-/* SIZES */
-/* FONTS */
-/* MISCELLANEOUS */
-/* Z-INDEXES - copied from source bootstrap file and adjusted */
-/* WHITELABEL */
+}
+
 .cf1jsC {
   margin-bottom: 10px;
   display: block;
