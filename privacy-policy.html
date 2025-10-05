@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - The Psychology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Верхняя плашка с логотипом */
+        .top-header {
+            background-color: #EEEEEE;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .top-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .site-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Кнопка Back */
+        .back-button {
+            background-color: #CA2D6F;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 20px;
+            transition: background-color 0.3s ease;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: fit-content;
+        }
+
+        .back-button:hover {
+            background-color: #a82459;
+        }
+
+        .back-button::before {
+            content: "←";
+            font-size: 18px;
+        }
+
+        /* Основной контент */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        .content-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .content-text p {
+            margin-bottom: 20px;
+        }
+
+        .content-text h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content-text h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-text ul, .content-text ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-text li {
+            margin-bottom: 10px;
+        }
+
+        .content-text strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .content-text a {
+            color: #CA2D6F;
+            text-decoration: underline;
+        }
+
+        .content-text a:hover {
+            color: #a82459;
+        }
+
+        .content-text hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 30px 0;
+        }
+
+        /* Футер */
+        .footer {
+            background-color: #5a5a5a;
+            color: #fff;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 20px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .footer-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer-copyright {
+            font-size: 13px;
+            color: #d0d0d0;
+            line-height: 1.6;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 20px;
+            }
+
+            .logo-img {
+                height: 32px;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+
+            .content-text {
+                font-size: 15px;
+            }
+
+            .content-text h2 {
+                font-size: 22px;
+            }
+
+            .content-text h3 {
+                font-size: 18px;
+            }
+
+            .back-button {
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Верхняя плашка с логотипом -->
+    <header class="top-header">
+        <div class="top-header-content">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <div class="site-title">The Psychology</div>
+        </div>
+    </header>
+
+    <!-- Кнопка Back -->
+    <a href="index.html" class="back-button">Back</a>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <h1 class="page-title">Privacy Policy</h1>
+        
+        <div class="content-text">
+            <p>This Privacy Policy explains how we, The Psychology ("we"), collect, use, and protect your personal data when you visit our website <a href="https://thepsychology.online/">https://thepsychology.online/</a> or contact us via email.</p>
+
+            <p>We are committed to handling your personal data responsibly and in compliance with the California Consumer Privacy Act ("CCPA"), the EU General Data Protection Regulation No. 2016/679 ("GDPR"), and other applicable privacy laws.</p>
+
+            <p>By continuing to use our website, you acknowledge that you have read this Privacy Policy and consent to the use of cookies in accordance with it.</p>
+
+            <p>If you wish to exercise any of your privacy rights described below, you can contact us at <strong>info@thepsychology.online</strong>.</p>
+
+            <hr>
+
+            <h2>PERSONAL DATA WE PROCESS</h2>
+
+            <p>We may collect and process your personal data for the following purposes:</p>
+
+            <ul>
+                <li><strong>Newsletter and updates:</strong> If you subscribe to our newsletters or updates, we process your contact details ("messaging data") based on your consent. You may withdraw your consent at any time.</li>
+                <li><strong>Communications:</strong> When you contact us directly, we may process information such as the content of your message and related metadata ("correspondence data"). This helps us manage communications and keep records. The legal basis is your consent or, in some cases, our legitimate interest in running our business efficiently.</li>
+                <li><strong>Website usage data:</strong> We may collect technical data about how you use our website ("device data"), including your IP address, browser type, operating system, geographic location, and browsing activity. We use cookies and similar technologies for this purpose, with your consent, to improve and secure our website.</li>
+                <li><strong>Legal compliance:</strong> We may process personal data if necessary to establish, exercise, or defend legal claims. This processing is based on our legitimate interests.</li>
+            </ul>
+
+            <hr>
+
+            <h2>DATA RETENTION</h2>
+
+            <p>We retain your personal data only for as long as necessary for the purposes for which it was collected:</p>
+
+            <ul>
+                <li>Messaging data — up to 2 years, unless you withdraw consent earlier.</li>
+                <li>Correspondence data — up to 6 months after the end of communication.</li>
+                <li>Device data — up to 2 years, unless you withdraw consent earlier.</li>
+            </ul>
+
+            <p>After the retention period expires, or upon your request, your personal data will be securely deleted unless required by law to be retained longer.</p>
+
+            <hr>
+
+            <h2>YOUR RIGHTS</h2>
+
+            <p>You have the following rights under data protection laws:</p>
+
+            <ul>
+                <li>Right to be informed about the processing of your personal data.</li>
+                <li>Right to access your personal data.</li>
+                <li>Right to rectify inaccurate or incomplete data.</li>
+                <li>Right to erase personal data ("right to be forgotten").</li>
+                <li>Right to restrict or object to processing.</li>
+                <li>Right to data portability.</li>
+                <li>Right to withdraw consent at any time.</li>
+                <li>Right to file a complaint with a supervisory authority.</li>
+                <li>Right not to be subject to automated decision-making, including profiling.</li>
+            </ul>
+
+            <p>You may exercise these rights by contacting us at <strong>info@thepsychology.online</strong>. We will respond within one month, or within three months in complex cases, notifying you of any extension.</p>
+
+            <hr>
+
+            <h2>MARKETING</h2>
+
+            <p>With your consent, we may contact you via email with updates or information about our work. You can unsubscribe from these communications at any time by following the link in our emails or contacting us directly.</p>
+
+            <hr>
+
+            <h2>COOKIES</h2>
+
+            <p>We use cookies to provide and improve our website experience. Cookies are small text files placed on your device to help us remember preferences and analyze traffic.</p>
+
+            <h3>Types of Cookies We Use:</h3>
+
+            <ul>
+                <li><strong>Essential cookies</strong> – Required for website functionality.</li>
+                <li><strong>Analytical cookies</strong> – Help us understand website usage and improve user experience.</li>
+                <li><strong>Marketing cookies</strong> – Used (with your consent) to personalize ads or promotional messages.</li>
+            </ul>
+
+            <p>You can manage or disable cookies through your browser settings. However, blocking cookies may impact website performance.</p>
+
+            <hr>
+
+            <h2>CHILDREN'S DATA</h2>
+
+            <p>Our website and services are not directed to individuals under the age of 18, and we do not knowingly collect personal data from minors.</p>
+
+            <hr>
+
+            <h2>CALIFORNIA PRIVACY RIGHTS</h2>
+
+            <p>If you are a California resident, you may have additional rights under the CCPA:</p>
+
+            <ul>
+                <li>We do not sell or share personal information for marketing purposes.</li>
+                <li>We only use personal information for the purposes described in this Privacy Policy.</li>
+                <li>You have the right not to be discriminated against for exercising your privacy rights.</li>
+                <li>We currently do not respond to Do Not Track (DNT) browser signals.</li>
+            </ul>
+
+            <hr>
+
+            <h2>UPDATES TO THIS POLICY</h2>
+
+            <p>We may revise this Privacy Policy from time to time. Any updates will be posted on this page, and significant changes may be communicated by email or other appropriate means.</p>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">The Psychology</div>
+            
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="about.html">About Us</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            
+            <div class="footer-copyright">
+                Copyright © 2024 The Psychology. All rights reserved. The Psychology does not provide medical advice, diagnosis, or treatment.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

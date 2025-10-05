@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuroscientists Reveal: This 10-Minute Test - The Psychology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Верхняя плашка с логотипом */
+        .top-header {
+            background-color: #EEEEEE;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .top-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .site-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Sticky плашка */
+        .sticky-header {
+            background-color: #F5F5F5;
+            padding: 6px 0;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sticky-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .sticky-text {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .btn-see-how {
+            background-color: #CA2D6F;
+            color: white;
+            border: none;
+            padding: 8px 24px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 0;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            height: 33px;
+        }
+
+        .btn-see-how:hover {
+            background-color: #a82459;
+        }
+
+        /* Основной контент */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+        /* Уведомление о комиссиях */
+        .commission-notice {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .commission-notice a {
+            color: #777;
+            text-decoration: underline;
+        }
+
+        .commission-notice a:hover {
+            color: #555;
+        }
+
+        /* Заголовок статьи */
+        .article-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        /* Разделитель */
+        .divider {
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 15px 0;
+        }
+
+        /* Метаинформация */
+        .article-meta {
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .article-meta .meta-line {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .article-meta .meta-line:first-child::after {
+            content: "•";
+            margin: 0 8px;
+            color: #888;
+        }
+
+        .article-meta .icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .article-meta svg {
+            width: 14px;
+            height: 14px;
+            fill: #888;
+        }
+
+        .article-meta .separator {
+            margin: 0 8px;
+        }
+
+        /* Текст статьи */
+        .article-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content h2 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .article-content strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .article-content em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* CTA блок */
+        .cta-block {
+            background-color: #F5F5F5;
+            border-radius: 0;
+            padding: 40px 30px;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .cta-text {
+            font-size: 20px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .btn-quiz {
+            background-color: #CA2D6F;
+            color: white;
+            border: none;
+            padding: 16px 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 0;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin-bottom: 15px;
+        }
+
+        .btn-quiz:hover {
+            background-color: #a82459;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #999;
+        }
+
+        /* Блок комментариев */
+        .comments-section {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .comments-header {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .comment {
+            display: flex;
+            gap: 15px;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .comment-content {
+            flex: 1;
+        }
+
+        .comment-author {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .comment-date {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 12px;
+        }
+
+        .comment-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Форма комментариев */
+        .comment-form {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #fafafa;
+            border-radius: 0;
+        }
+
+        .comment-form-header {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .comment-form-notice {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .form-label .required {
+            color: #CA2D6F;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #CA2D6F;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            min-height: 120px;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-textarea:focus {
+            outline: none;
+            border-color: #CA2D6F;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form-checkbox input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        .form-checkbox label {
+            font-size: 13px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .form-file {
+            margin-bottom: 20px;
+        }
+
+        .form-file-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .btn-submit {
+            background-color: #666;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #555;
+        }
+
+        .btn-submit:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            display: none;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .loader {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #CA2D6F;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Футер */
+        .footer {
+            background-color: #5a5a5a;
+            color: #fff;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 20px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .footer-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer-copyright {
+            font-size: 13px;
+            color: #d0d0d0;
+            line-height: 1.6;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 20px;
+            }
+
+            .logo-img {
+                height: 32px;
+            }
+
+            .sticky-header {
+                height: auto;
+                padding: 8px 0;
+            }
+
+            .sticky-text {
+                font-size: 14px;
+                text-align: left;
+                flex: 1;
+                line-height: 1.3;
+            }
+
+            .sticky-header-content {
+                flex-wrap: nowrap;
+                gap: 12px;
+            }
+
+            .btn-see-how {
+                flex-shrink: 0;
+                padding: 10px 12px;
+                font-size: 12px;
+                height: auto;
+                white-space: nowrap;
+            }
+
+            .article-meta {
+                gap: 4px;
+            }
+
+            .article-meta .meta-line {
+                flex: 1 1 100%;
+                gap: 3px;
+            }
+
+            .article-meta .meta-line:first-child::after {
+                display: none;
+            }
+
+            .article-meta .separator {
+                margin: 0 3px;
+            }
+
+            .article-meta svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            .article-title {
+                font-size: 28px;
+            }
+
+            .article-content {
+                font-size: 16px;
+            }
+
+            .article-content h2 {
+                font-size: 22px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+
+            .cta-text {
+                font-size: 18px;
+            }
+
+            .cta-block {
+                padding: 30px 20px;
+            }
+
+            .comments-header {
+                font-size: 20px;
+            }
+
+            .comment-avatar {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .comment-author {
+                font-size: 15px;
+            }
+
+            .comment-text {
+                font-size: 14px;
+            }
+
+            .comment-form {
+                padding: 20px;
+            }
+
+            .comment-form-header {
+                font-size: 20px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-submit {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-title {
+                font-size: 24px;
+            }
+
+            .btn-quiz {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Верхняя плашка с логотипом -->
+    <header class="top-header">
+        <div class="top-header-content">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <div class="site-title">The Psychology</div>
+        </div>
+    </header>
+
+    <!-- Sticky плашка -->
+    <div class="sticky-header">
+        <div class="sticky-header-content">
+            <div class="sticky-text">Uncover the Hidden Architecture of Your Mind</div>
+            <a href="https://start.tryinnerly.com/autism2" class="btn-see-how">SEE HOW</a>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Уведомление о комиссиях -->
+        <div class="commission-notice">
+            Commissions may be earned on purchases made through links. <a href="terms-of-service.html#affiliate-disclosure">Learn More</a>.
+        </div>
+
+        <!-- Заголовок статьи -->
+        <h1 class="article-title">
+            Neuroscientists Reveal: This 10-Minute Test Uncovers the Hidden Spectrum Behind Overthinking and Exhaustion
+        </h1>
+
+        <!-- Разделитель -->
+        <div class="divider"></div>
+
+        <!-- Метаинформация -->
+        <div class="article-meta">
+            <div class="meta-line">
+                <span>Published By <strong>Dr. Daniel Foster MD</strong> | Psychology</span>
+            </div>
+            <div class="meta-line">
+                <span>Last update: Sep 19</span>
+                <span class="separator">•</span>
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                    </svg>
+                    3
+                </span>
+                <span class="separator">•</span>
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                    </svg>
+                    41049
+                </span>
+                <span class="separator">•</span>
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                    </svg>
+                    6 min
+                </span>
+            </div>
+        </div>
+
+        <!-- Текст статьи -->
+        <article class="article-content">
+            <p>For years, I thought something was just "off."</p>
+
+            <p>It started with a single sentence.<br>
+            A friend smirked and said, "You overanalyze everything."</p>
+
+            <p>I laughed it off — but that night, I couldn't stop thinking about it.<br>
+            Because she was right. I do analyze everything.</p>
+
+            <p>Every conversation. Every pause. Every flicker of emotion on someone's face.<br>
+            Before answering a phone call, I mentally rehearse what I'll say.<br>
+            And loud cafés? They feel like the world is turned up to maximum volume.</p>
+
+            <p>No matter how much I rest, I wake up exhausted — not physically, but mentally.</p>
+
+            <p>I assumed it was anxiety. Maybe burnout. Or just introversion.<br>
+            But then I stumbled across something I had never even considered: autism in adults.</p>
+
+            <p><strong>"You're not broken — your brain just works differently."</strong></p>
+
+            <p>That one line stopped me cold.</p>
+
+            <p>Until that moment, I didn't know an adult could be autistic and not realize it.<br>
+            Turns out, there are thousands of people like me.<br>
+            Not looking for a label — just looking for understanding.</p>
+
+            <p>According to Harvard, Stanford, and King's College London,<br>
+            roughly 1 in 30 adults may have autistic traits that were never identified in childhood.</p>
+
+            <p>Why? Because they learned to mask — to copy, adapt, and perform "normal."</p>
+
+            <p>Clinical psychologist Dr. Emily Carter, who studies masking in adults, explains:</p>
+
+            <p><em>"It's not a lack of emotion. It's exhaustion.<br>
+            They've spent a lifetime consciously doing what others do naturally."</em></p>
+
+            <h2>5 "Normal" Habits That May Hide Autistic Traits</h2>
+
+            <p><strong>1️⃣ You mentally rehearse conversations — even simple ones</strong><br>
+            Ordering coffee shouldn't feel like a performance, but your mind needs predictability to avoid mistakes.</p>
+
+            <p><strong>2️⃣ You feel drained after socializing — even with people you love</strong><br>
+            It's not antisocial behavior. It's sensory overload — your brain processing every word, tone, and facial cue at once.</p>
+
+            <p><strong>3️⃣ You notice tiny details others don't</strong><br>
+            The flicker of a light, a ticking clock, a clothing tag.<br>
+            Your sensory filters just operate differently.</p>
+
+            <p><strong>4️⃣ Sudden changes throw you off</strong><br>
+            You're not a "control freak."<br>
+            Your nervous system simply feels safe only within structure.</p>
+
+            <p><strong>5️⃣ You replay past conversations over and over</strong><br>
+            Not because you're obsessive — but because your brain is analyzing what went wrong,<br>
+            trying to "debug" a social situation others navigate instinctively.</p>
+
+            <h2>The Night Everything Clicked</h2>
+
+            <p>One night, I found an article with the headline:<br>
+            "Take a 10-Minute Test for Autistic Traits."</p>
+
+            <p>I rolled my eyes — I'd seen enough "personality quizzes" that tell you you're "sensitive but creative."<br>
+            But curiosity won.</p>
+
+            <p>Ten minutes later, I was staring at my result:<br>
+            <em>"High likelihood of autistic traits — particularly in communication and sensory processing."</em></p>
+
+            <p>I sat in silence. Then I cried — not from fear, but from relief.<br>
+            It felt like someone had finally handed me the user manual to my own brain.</p>
+
+            <h2>What Really Happens in the Autistic Brain</h2>
+
+            <p>Neuroscientific research shows that in autistic individuals,<br>
+            the regions of the brain responsible for detail processing and emotional response<br>
+            are more strongly connected.</p>
+
+            <p>In other words, you feel and analyze at the same time —<br>
+            your mind runs at double speed.</p>
+
+            <p>Dr. Carter describes it like this:</p>
+
+            <p><em>"It's as if every browser tab is open at once.<br>
+            The computer isn't broken — it's just processing more data."</em></p>
+
+            <p>And while that can be exhausting,<br>
+            it's also what makes autistic adults deeply empathetic, creative, and detail-oriented —<br>
+            once they finally understand how their brain works.</p>
+
+            <h2>Why This Test Is Different</h2>
+
+            <p>Most online "autism tests" are outdated or inaccurate.<br>
+            This one was developed in collaboration with clinical neuropsychologists<br>
+            and uses adaptive logic to map your unique neuroprofile —<br>
+            not to diagnose, but to show how your brain processes the world.</p>
+
+            <p>It evaluates your tendencies in:<br>
+            • Sensory sensitivity<br>
+            • Communication and social cognition<br>
+            • Emotional regulation<br>
+            • Attention and need for routine</p>
+
+            <p>In just a few minutes, you'll see how your traits align with the autism spectrum —<br>
+            and how they may influence your relationships, work, and energy levels.</p>
+        </article>
+
+        <!-- CTA блок -->
+        <div class="cta-block" id="quiz">
+            <div class="cta-text">
+                Uncover your neuroprofile — take the 10-minute test. Join 100,000+ people who finally understand how their mind truly works.
+            </div>
+            <a href="https://start.tryinnerly.com/autism2" class="btn-quiz">TAKE THE QUIZ</a>
+            <div class="disclaimer">Results may vary due to personal features</div>
+        </div>
+
+        <!-- Блок комментариев -->
+        <div class="comments-section">
+            <h3 class="comments-header">Comments (3)</h3>
+            
+            <div class="comment">
+                <div class="comment-avatar">A</div>
+                <div class="comment-content">
+                    <div class="comment-author">Amy B.</div>
+                    <div class="comment-date">19 Sep, 2025 at 12:32 pm</div>
+                    <div class="comment-text">I came across this while reading about adult autism for my psychology degree. The science behind sensory processing and masking is fascinating — and this test actually reflects it really accurately.</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar">L</div>
+                <div class="comment-content">
+                    <div class="comment-author">Lorri Perryman</div>
+                    <div class="comment-date">16 Sep, 2025 at 11:31 am</div>
+                    <div class="comment-text">I've taken a bunch of "personality" quizzes before, but this one felt totally different. It described things I've never been able to explain — finally makes sense why I get so drained after social situations.</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar">S</div>
+                <div class="comment-content">
+                    <div class="comment-author">Sharon Franklin</div>
+                    <div class="comment-date">11 Sep, 2025 at 9:01 pm</div>
+                    <div class="comment-text">I asked my husband to try it because he's always exhausted after work and avoids group stuff. We didn't expect much, but the results explained everything. He said it's the first time something actually made sense about how his brain works. It's been a game changer for both of us.</div>
+                </div>
+            </div>
+
+            <!-- Форма комментариев -->
+            <div class="comment-form">
+                <h4 class="comment-form-header">Leave a comment</h4>
+                <p class="comment-form-notice">Your email address will not be published. Required fields are marked <span style="color: #CA2D6F;">*</span></p>
+                
+                <form id="commentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="comment">Comment <span class="required">*</span></label>
+                        <textarea id="comment" name="comment" class="form-textarea" required></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="save-info" name="save-info">
+                        <label for="save-info">Save my name, email, and website in this browser for the next time I comment.</label>
+                    </div>
+
+                    <div class="form-file">
+                        <label class="form-file-label" for="avatar">Upload Avatar (optional)</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Post Comment</button>
+                    
+                    <div class="loader" id="loader"></div>
+                    <div class="form-message success" id="successMessage">
+                        Thank you for your comment! It will be published after moderation.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">The Psychology</div>
+            
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="about.html">About Us</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            
+            <div class="footer-copyright">
+                Copyright © 2024 The Psychology. All rights reserved. The Psychology does not provide medical advice, diagnosis, or treatment.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Скрываем кнопку и показываем лоадер
+            const submitBtn = document.querySelector('.btn-submit');
+            const loader = document.getElementById('loader');
+            const successMessage = document.getElementById('successMessage');
+            
+            submitBtn.disabled = true;
+            loader.style.display = 'block';
+            
+            // Имитация отправки на сервер
+            setTimeout(function() {
+                loader.style.display = 'none';
+                successMessage.style.display = 'block';
+                
+                // Очищаем форму
+                document.getElementById('commentForm').reset();
+                
+                // Через 5 секунд скрываем сообщение и возвращаем кнопку
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                    submitBtn.disabled = false;
+                }, 5000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
+
